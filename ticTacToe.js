@@ -2,24 +2,30 @@ var $ = function(id) {
 	return document.getElementById(id);
 }
 
-var turn = 0;
+var turn = 1;
 
-function mark(){
+function mark1(check){
 
-	if($("b1").value == "" && turn == 0){
+	if($("b1").value == "" && turn%2 == 0){
 		$("b1").value = 'X';
 		turn++;
-		//return check.value = 'X';
+		
+	}
+	else{
+		$("b1").value = 'O';
+		turn++;
+		
 	}
 	
 }
 
 
-/*
-window.onload = function(){
-	//$("b1").onclick = mark;
 
-}*/
+window.onload = function(){
+	$("b1").onclick = mark1;
+	$("b2").onclick = mark;
+
+}
 
 //clear function
 //game win check
