@@ -20,3 +20,6 @@ window.onload = function(){
 	//$("b1").onclick = mark;
 
 }*/
+
+//clear function
+//game win check
